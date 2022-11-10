@@ -1,0 +1,246 @@
+2022-11-10 15:01:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRINTING_PRODUCT" not found (this database is empty); SQL statement:
+SELECT "PRINTING_PRODUCT"."ID" AS "ID", "PRINTING_PRODUCT"."NAME" AS "NAME", "PRINTING_PRODUCT"."AUTHOR" AS "AUTHOR", "PRINTING_PRODUCT"."PUBLISHER" AS "PUBLISHER", "PRINTING_PRODUCT"."RELEASE_DATE" AS "RELEASE_DATE" FROM "PRINTING_PRODUCT" [42104-214]
+2022-11-10 15:07:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRINTING_PRODUCT" not found (this database is empty); SQL statement:
+SELECT "PRINTING_PRODUCT"."ID" AS "ID", "PRINTING_PRODUCT"."NAME" AS "NAME", "PRINTING_PRODUCT"."AUTHOR" AS "AUTHOR", "PRINTING_PRODUCT"."PUBLISHER" AS "PUBLISHER", "PRINTING_PRODUCT"."RELEASE_DATE" AS "RELEASE_DATE" FROM "PRINTING_PRODUCT" [42104-214]
+2022-11-10 15:09:50 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "INSERT INTO PrintingProduct (author, publisher, name,releaseDate) VALUES\000d\000a  ('Tolstoy', 'Russia', 'War and peace','2022-12-10'),[*]"; ожидалось "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PrintingProduct (author, publisher, name,releaseDate) VALUES\000d\000a  ('Tolstoy', 'Russia', 'War and peace','2022-12-10'),[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PrintingProduct (author, publisher, name,releaseDate) VALUES
+  ('Tolstoy', 'Russia', 'War and peace','2022-12-10'), [42001-214]
+2022-11-10 15:17:39 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE  IF NOT EXISTS `PrintingProduct` (\000d\000a  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,\000d\000a  `author` VARCHAR(45) NULL,\000d\000a  `publisher` VARCHAR(45) NULL,\000d\000a  `name` VARCHAR(45) NULL,\000d\000a  `releaseDate` DATE NULL[*]"; ожидалось "AS, DEFAULT, GENERATED, ON UPDATE, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE  IF NOT EXISTS `PrintingProduct` (\000d\000a  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,\000d\000a  `author` VARCHAR(45) NULL,\000d\000a  `publisher` VARCHAR(45) NULL,\000d\000a  `name` VARCHAR(45) NULL,\000d\000a  `releaseDate` DATE NULL[*]"; expected "AS, DEFAULT, GENERATED, ON UPDATE, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE  IF NOT EXISTS `PrintingProduct` (
+  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `author` VARCHAR(45) NULL,
+  `publisher` VARCHAR(45) NULL,
+  `name` VARCHAR(45) NULL,
+  `releaseDate` DATE NULL [42001-214]
+2022-11-10 15:18:20 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "CREATE TABLE   `PrintingProduct` (\000d\000a  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,\000d\000a  `author` VARCHAR(45) NULL,\000d\000a  `publisher` VARCHAR(45) NULL,\000d\000a  `name` VARCHAR(45) NULL,\000d\000a  `releaseDate` DATE NULL[*]"; ожидалось "AS, DEFAULT, GENERATED, ON UPDATE, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE   `PrintingProduct` (\000d\000a  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,\000d\000a  `author` VARCHAR(45) NULL,\000d\000a  `publisher` VARCHAR(45) NULL,\000d\000a  `name` VARCHAR(45) NULL,\000d\000a  `releaseDate` DATE NULL[*]"; expected "AS, DEFAULT, GENERATED, ON UPDATE, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE   `PrintingProduct` (
+  `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `author` VARCHAR(45) NULL,
+  `publisher` VARCHAR(45) NULL,
+  `name` VARCHAR(45) NULL,
+  `releaseDate` DATE NULL [42001-214]
+2022-11-10 15:19:44 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "INSERT INTO PrintingProduct (author, publisher, name,releaseDate) VALUES\000d\000a  ('Tolstoy', 'Russia', 'War and peace','2022-12-10'),[*]"; ожидалось "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "INSERT INTO PrintingProduct (author, publisher, name,releaseDate) VALUES\000d\000a  ('Tolstoy', 'Russia', 'War and peace','2022-12-10'),[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO PrintingProduct (author, publisher, name,releaseDate) VALUES
+  ('Tolstoy', 'Russia', 'War and peace','2022-12-10'), [42001-214]
+2022-11-10 15:20:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "PRINTING_PRODUCT" не найдена
+Table "PRINTING_PRODUCT" not found; SQL statement:
+SELECT "PRINTING_PRODUCT"."ID" AS "ID", "PRINTING_PRODUCT"."NAME" AS "NAME", "PRINTING_PRODUCT"."AUTHOR" AS "AUTHOR", "PRINTING_PRODUCT"."PUBLISHER" AS "PUBLISHER", "PRINTING_PRODUCT"."RELEASE_DATE" AS "RELEASE_DATE" FROM "PRINTING_PRODUCT" [42102-214]
+2022-11-10 15:23:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PrintingProduct" not found (candidates are: "PRINTINGPRODUCT"); SQL statement:
+SELECT "PrintingProduct"."ID" AS "ID", "PrintingProduct"."NAME" AS "NAME", "PrintingProduct"."AUTHOR" AS "AUTHOR", "PrintingProduct"."PUBLISHER" AS "PUBLISHER", "PrintingProduct"."releaseDate" AS "releaseDate" FROM "PrintingProduct" [42103-214]
+2022-11-10 15:25:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "PRINTINGPRODUCT" не найдена
+Table "PRINTINGPRODUCT" not found; SQL statement:
+INSERT INTO PrintingProduct (author, publisher, name,releaseDate) VALUES
+  ('Tolstoy', 'Russia', 'War and peace','2022-12-10') [42102-214]
+2022-11-10 15:25:26 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "RELEASEDATE" не найден
+Column "RELEASEDATE" not found; SQL statement:
+INSERT INTO Printing_Product (author, publisher, name,releaseDate) VALUES
+  ('Tolstoy', 'Russia', 'War and peace','2022-12-10') [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-11-10 15:27:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "RELEASEDATE" не найден
+Column "RELEASEDATE" not found; SQL statement:
+INSERT INTO Printing_Product (author, publisher, name,releaseDate) VALUES
+  ('Tolstoy', 'Russia', 'War and peace','2022-12-10') [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-11-10 15:27:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "RELEASEDATE" не найден
+Column "RELEASEDATE" not found; SQL statement:
+INSERT INTO Printing_Product (author, publisher, name,releaseDate) VALUES
+  ('Tolstoy', 'Russia', 'War and peace','2022-12-10') [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.parseColumn(Parser.java:1256)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1241)
+	at org.h2.command.Parser.parseInsert(Parser.java:1641)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp.query(WebApp.java:1113)
+	at org.h2.server.web.WebApp.process(WebApp.java:244)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-11-10 15:27:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "PrintingProduct" не найдена
+Table "PrintingProduct" not found; SQL statement:
+SELECT "PrintingProduct"."ID" AS "ID", "PrintingProduct"."NAME" AS "NAME", "PrintingProduct"."AUTHOR" AS "AUTHOR", "PrintingProduct"."PUBLISHER" AS "PUBLISHER", "PrintingProduct"."releaseDate" AS "releaseDate" FROM "PrintingProduct" [42102-214]
+2022-11-10 15:29:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "PrintingProduct" не найдена
+Table "PrintingProduct" not found; SQL statement:
+SELECT "PrintingProduct"."ID" AS "ID", "PrintingProduct"."NAME" AS "NAME", "PrintingProduct"."AUTHOR" AS "AUTHOR", "PrintingProduct"."PUBLISHER" AS "PUBLISHER", "PrintingProduct"."releaseDate" AS "releaseDate" FROM "PrintingProduct" [42102-214]
