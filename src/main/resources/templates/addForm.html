@@ -21,16 +21,16 @@
           th:object="${printingProduct}" method="POST">
         <input type="hidden" th:field="*{id}"/>
 
-        <input type="text" th:field="*{name}"
+        <input type="text" th:field="*{name}" required="required"
                class="form-control mb-4 col-4" placeholder="Name">
 
-        <input type="text" th:field="*{author}"
+        <input type="text" th:field="*{author}" required="required"
                class="form-control mb-4 col-4" placeholder="Author">
 
-        <input type="text" th:field="*{publisher}"
+        <input type="text" th:field="*{publisher}" required="required"
                class="form-control mb-4 col-4" placeholder="Publisher">
 
-        <input type="date" th:field="*{releaseDate}"
+        <input type="date" th:field="*{releaseDate}" required="required"
                class="form-control mb-4 col-4" placeholder="Date">
 
         <button type="submit" class="btn btn-info col-2">Save</button>
