@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
@@ -33,27 +34,23 @@ public class PrintingProductController {
         return "addForm";
     }
 
-    @RequestMapping("/delete")
-    public String delete(HttpServletRequest request) {
-        String id = request.getParameter("productId");
-        printingProductService.delete(Long.parseLong(id));
+    @RequestMapping("/delete/{id}")
+    public String delete(@PathVariable("id") long id) {
+        printingProductService.delete(id);
         return "redirect:/base_page";
     }
 
-    @RequestMapping("/update")
-    public String showUpdateForm(HttpServletRequest request, Model model) {
-        String id = request.getParameter("productId");
-        PrintingProduct printingProduct = printingProductService.findById(Long.parseLong(id));
+    @RequestMapping("/update/{id}")
+    public String showUpdateForm(Model model,@PathVariable("id") long id) {
+        PrintingProduct printingProduct = printingProductService.findById(id);
         model.addAttribute("printingProduct", printingProduct);
         return "addForm";
     }
 
     @RequestMapping("/save")
-    public String save(HttpServletRequest request, @ModelAttribute("printingProduct") PrintingProduct printingProduct,
-                       Model model) {
-        printingProductService.save(printingProduct);
+    public String save( @ModelAttribute("printingProduct") PrintingProduct printingProduct,Model model) {
         List<PrintingProduct> listProducts = new ArrayList<PrintingProduct>();
-        listProducts.add(printingProductService.findById(printingProduct.getId()));
+        listProducts.add(printingProductService.save(printingProduct));
         model.addAttribute("printingProducts", listProducts);
         return "basePage";
     }
