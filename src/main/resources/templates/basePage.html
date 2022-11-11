@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://thymeleaf.org">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-
-    <!-- Bootstrap CSS -->
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet">
 
     <title>Library catalog</title>
 </head>
-
 <body>
-
 <div class="container">
-
     <h3>Library catalog</h3>
     <hr>
-
-    <!-- Add a button -->
     <a class="btn btn-primary btn-sm mb-3"
        th:href="@{/add}">
         Add
     </a>
-
     <a class="btn btn-primary btn-sm mb-3"
        th:href="@{/searchForm}">
         Search
@@ -35,7 +26,6 @@
        th:href="@{/base_page}">
         All catalog
     </a>
-
     <table class="table table-bordered table-striped">
         <thead class="thead-dark">
         <tr>
@@ -46,7 +36,6 @@
             <th>Action</th>
         </tr>
         </thead>
-
         <tbody>
         <tr th:each="printingProduct : ${printingProducts}">
 
