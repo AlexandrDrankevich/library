@@ -26,7 +26,7 @@
 						 th:object="${printingProduct}" method="POST">
 						 
             <label for="searhType">Select search type</label>      
-                  <select onchange="location = this.value;" class="form-control mb-4 col-4" name="searhType">
+                  <select id="searhType" class="form-control mb-4 col-4" name="searhType">
       <option value="author" th:text="Author"></option>
      <option value="name" th:text="Name"></option>
       <option value="publisher" th:text="Publisher"></option>
