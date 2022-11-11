@@ -1,12 +1,16 @@
 package com.ex.library.entity;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.sql.Date;
 import java.util.Objects;
 
 import org.springframework.data.annotation.Id;
 
-public class PrintingProduct {
+public class PrintingProduct implements Serializable {
 
+	@Serial
+	private static final long serialVersionUID = 2787232361672994772L;
 	@Id
 	private long id;
 	private String author;
@@ -88,5 +92,4 @@ public class PrintingProduct {
 		return "PrintingProduct [id=" + id + ", author=" + author + ", publisher=" + publisher + ", name=" + name
 				+ ", releaseDate=" + releaseDate + "]";
 	}
-
 }
