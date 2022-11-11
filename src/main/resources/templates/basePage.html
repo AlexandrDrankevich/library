@@ -65,6 +65,12 @@
                 </div>
             </td>
         </tr>
+         
+        <th:block th:if="${printingProducts.size()==0}">
+        <tr>
+            <td>Nothing were found</td>
+            </tr>
+        </th:block>
         </tbody>
     </table>
 </div>
