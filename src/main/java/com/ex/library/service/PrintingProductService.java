@@ -39,13 +39,14 @@ public class PrintingProductService {
 
     @Cacheable(value = "products", key = "#searchData")
     public List<PrintingProduct> findByData(String searchType, String searchData) {
+
         switch (searchType) {
             case ("publisher"):
-                return printingProductRepository.findByPublisher(searchData);
+                return printingProductRepository.findByPublisherIgnoreCase(searchData);
             case ("author"):
-                return printingProductRepository.findByAuthor(searchData);
+                return printingProductRepository.findByAuthorIgnoreCase(searchData);
             case ("name"):
-                return printingProductRepository.findByName(searchData);
+                return printingProductRepository.findByNameIgnoreCase(searchData);
             default:
                 return null;
         }

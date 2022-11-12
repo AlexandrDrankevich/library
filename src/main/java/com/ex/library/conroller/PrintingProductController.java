@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 @Controller
 public class PrintingProductController {
@@ -63,7 +64,7 @@ public class PrintingProductController {
     @RequestMapping("/search")
     public String search(HttpServletRequest request, Model model) {
         String searchType = request.getParameter("searhType");
-        String searchData = request.getParameter("searchData");
+        String searchData = request.getParameter("searchData").toUpperCase();
         List<PrintingProduct> listProducts = printingProductService.findByData(searchType, searchData);
         model.addAttribute("printingProducts", listProducts);
         logger.info(listProducts);

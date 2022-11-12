@@ -8,9 +8,9 @@ import java.util.List;
 
 @Repository
 public interface PrintingProductRepository extends CrudRepository<PrintingProduct, Long> {
-    List<PrintingProduct> findByAuthor(String author);
+    List<PrintingProduct> findByAuthorIgnoreCase(String author);
 
-    List<PrintingProduct> findByPublisher(String publisher);
+    List<PrintingProduct> findByPublisherIgnoreCase(String publisher);
 
-    List<PrintingProduct> findByName(String name);
+    List<PrintingProduct> findByNameIgnoreCase(String name);
 }
